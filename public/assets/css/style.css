@@ -1,14 +1,21 @@
-.join_presentation{
-    display: flex;
-    align-items: center;
+:root {
+    --primary-color: #184E20 ;
+    --secondary-color: #59300E;
 }
 
-.join_card{
+.joinUs_container{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 70%;
+    margin:auto;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    color:white;
+}
+.joinUs_container p{
+    text-align: center;
 }
 .enrollment_form-title{
     text-align: center;
@@ -19,6 +26,6 @@
     width: 70%
 }
 .btn{
-    background-color:#184E20;
+    background-color: var(--primary-color);
 }
 
