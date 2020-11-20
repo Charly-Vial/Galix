@@ -7,7 +7,7 @@ class JoinManager extends AbstractManager
     /**
      *
      */
-   const TABLE = 'soldier';
+    public const TABLE = 'soldier';
 
     /**
      *  Initializes this class.
@@ -16,14 +16,12 @@ class JoinManager extends AbstractManager
     {
         parent::__construct(self::TABLE);
     }
-    /**
-     * @param array $soldier
-     * @return int
-     */
-    public function insert(array $soldier): int
+
+    public function insert(array $soldier)
     {
         // prepared request
-        $statement = $this->pdo->prepare("INSERT INTO " . self::TABLE . " (`name`, `password`) VALUES (:name, :password)");
+        $statement = $this->pdo->prepare("INSERT INTO " . self::TABLE . " (`name`, `password`) 
+        VALUES (:name, :password)");
         $statement->bindValue('name', $soldier['name'], \PDO::PARAM_STR);
         $statement->bindValue('password', password_hash($soldier['password'], PASSWORD_DEFAULT));
 
