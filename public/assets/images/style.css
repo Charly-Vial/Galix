@@ -1,0 +1,14 @@
+
+/* Page store */
+h1{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.card{
+    width: 300px;
+}
+.card-body{
+    align-items: center;
+}
+/* End Page store */
