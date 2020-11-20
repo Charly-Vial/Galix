@@ -1,0 +1,49 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>The store</h1>
+
+    <div class="row row-cols-1 row-cols-md-4">
+        <div class="col mb-4">
+            <div class="card">
+                <img src="wooden-beer-mug.jpg" class="card-img-top" alt="wooden-beer-mug">
+                <div class="card-body">
+                    <h5 class="card-title">Cervoise</h5>
+                    <p class="card-text">A delicious drink to regain strength</p>
+                    <a href="#" class="btn btn-primary" name="cervoise">Buy it!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="boar.png" class="card-img-top" alt="boar">
+                <div class="card-body">
+                    <h5 class="card-title">Boar</h5>
+                    <p class="card-text">
+                        Boar is the official food of the Gauls</p>
+                    <a href="#" class="btn btn-primary" name="boar">Buy it!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="potion.png" class="card-img-top" alt="potion">
+                <div class="card-body">
+                    <h5 class="card-title">Magic Potion</h5>
+                    <p class="card-text">Druid secret for win battles</p>
+                    <a href="#" class="btn btn-primary" name="potion">Buy it!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card">
+                <img src="weat.png" class="card-img-top" alt="weat">
+                <div class="card-body">
+                    <h5 class="card-title">Cereals</h5>
+                    <p class="card-text">Staple food to feed the family</p>
+                    <a href="#" class="btn btn-primary" name="cereal">Buy it!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
