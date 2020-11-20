@@ -1,10 +1,9 @@
-
 :root {
     --primary-color: #184E20 ;
     --secondary-color: #59300E;
 }
 
-.joinUs_container{
+.joinUs_container {
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -15,21 +14,26 @@
     margin-top: 20px;
     color:white;
 }
-.joinUs_container p{
+
+.joinUs_container p {
     text-align: center;
 }
-.enrollment_form-title{
+
+.enrollment_form-title {
     text-align: center;
 }
-.enrollment_form{
+
+.enrollment_form {
     padding:10px;
     margin: auto;
     width: 70%
 }
-.btn{
-    background-color: var(--primary-color);
 
-.map{
+.btn {
+    background-color: var(--primary-color);
+}
+
+.map {
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -37,3 +41,9 @@
     border: 10px;
 }
 
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
