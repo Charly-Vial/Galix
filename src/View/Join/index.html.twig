@@ -1,0 +1,45 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class = joinUs_container>
+        <h1>Join us!</h1>
+        <p class="card-text">Help Vercingetorix and his fellows to Defeat Cesar's army! </p>
+        <h2 class="card-title join_presentation_title">Why would I do that?</h2>
+        <p> enroll in a battle and get food for your family!</p>
+        <p>1 battle = 100 menhir token, change your token for food and other nice items in our shop.</p>
+
+    </div>
+
+    <h1 class="enrollment_form-title">Enroll Now!</h1>
+    <form action = "/join/add" method="post" class="enrollment_form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name"  placeholder="Enter your name">
+            {% if errors['name'] is defined %}
+                <span style="color:red;">{{ errors.name }}</span>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name ="password" placeholder="Enter your assword">
+            {% if errors['password'] is defined %}
+                <span style="color:red;">{{ errors.password }}</span>
+            {% endif %}
+        </div>
+        <button type="submit" class="btn btn-primary">Fight soldier!</button>
+    </form>
+    <footer>
+        <div class="card text-center">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <p class="card-text">Made with fun and very little sleep</p>
+                <a href="https://www.wildcodeschool.com/fr-FR/campus/lyon" class="btn btn-primary">WCS Lyon</a>
+                <a href="#" class="btn btn-primary">About Us</a>
+            </div>
+            <div class="card-footer text-muted">
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
