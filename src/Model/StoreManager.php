@@ -5,6 +5,7 @@ namespace App\Model;
 /**
  *
  */
+
 class StoreManager extends AbstractManager
 {
     /**
