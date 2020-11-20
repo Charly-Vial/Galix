@@ -18,7 +18,7 @@ use App\Model\StoreManager;
  */
 class StoreController extends AbstractController {
 
-    public function store() {
+    public function index() {
         return $this->twig->render('store/store.html.twig');
     }
 
