@@ -1,38 +1,30 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-<html>
-<head>
-    <title>Galix's Home Page</title>
-    <meta charset = "utf-8">
-    <link rel = "View/Home/layout.html.twig">
-</head>
-    <body>
-        <h1>HEADER</h1>
+    <p id="demo"></p>
         <div class="jumbotron text-center">
-            <div class="btn btn-secondary btn-lg">
-            <button type="button" class="btn btn-secondary btn-lg">JOIN US</button>
-            </div>
-            <div class = map>
-            <a href="/" >
+            <a class="btn btn-secondary btn-lg" href="/Join/index">
+                <button type="button" class="btn btn-secondary btn-lg">JOIN US</button></a>
+        <div id="map"><class="center">
             <img src="https://i.pinimg.com/originals/25/69/b1/2569b183fe2f1af40de20e58f113ba00.png" alt="ancient map of Gallia" height="500px" width="450px">
-            </a>
-            </div>
-    </body>
-</html>
-
+        </a>
+        </div>
+</head>
+<footer>
+    <div class="card text-center">
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+            <p class="card-text">Made with fun and very little sleep</p>
+            <a href="https://www.wildcodeschool.com/fr-FR/campus/lyon" class="btn btn-primary">WCS Lyon</a>
+            <a href="#" class="btn btn-primary">About Us</a>
+        </div>
+        <div class="card-footer text-muted">
+        </div>
+    </div>
+</footer>
 {% endblock %}
 
 {% block javascript %}
-    <script>
-        var counter = 10;
-        var nextBattleCountdown = setInterval(function(){
-        console.log(counter);
-        counter--
-        if (counter === 0) {
-        console.log("HAPPY NEW WAR!!");
-        clearInterval(nextBattleCountdown);
-        }
-        }, 1000);
-    </script>
+<script type="text/Javascript" src="/assets/js/script.js"></script>
 {% endblock %}
