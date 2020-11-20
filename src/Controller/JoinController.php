@@ -33,6 +33,7 @@ class JoinController extends AbstractController
     {
         $errors = [];
         $name = $password = "";
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $name = trim($_POST['name']);
             $password = trim($_POST['password']);
