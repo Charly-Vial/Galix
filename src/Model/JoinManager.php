@@ -17,7 +17,7 @@ class JoinManager extends AbstractManager
         parent::__construct(self::TABLE);
     }
     /**
-     * @param array $item
+     * @param array $soldier
      * @return int
      */
     public function insert(array $soldier): int
