@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #184E20 ;
     --secondary-color: #59300E;
@@ -27,5 +28,10 @@
 }
 .btn{
     background-color: var(--primary-color);
+
+.map{
+    display: flex;
+    justify-content: center;
+
 }
 
