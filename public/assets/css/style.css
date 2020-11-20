@@ -46,4 +46,12 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
+    background-color: #a6c49a;
+}
+
+.store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
 }
