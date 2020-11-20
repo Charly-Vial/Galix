@@ -33,14 +33,16 @@ class JoinController extends AbstractController
     {
         $errors = [];
         $name = $password = "";
-        if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $name = trim($_POST['name']);
             $password = trim($_POST['password']);
-            if(empty($name))
+            if (empty($name)) {
                 $errors['name'] = "name required";
-            if(empty($password))
+            }
+            if (empty($password)) {
                 $errors['password'] = "password required";
-            if(empty($errors)){
+            }
+            if (empty($errors)) {
                 $joinManager = new JoinManager();
                 $soldier = [
                     'name' => $name,
@@ -53,7 +55,7 @@ class JoinController extends AbstractController
 
         return $this->twig->render('Join/index.html.twig', [
             'errors' => $errors,
-            'formData' =>[
+            'formData' => [
                 'name' => $name,
                 'password' => $password,
             ]
