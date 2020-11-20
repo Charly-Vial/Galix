@@ -5,6 +5,7 @@ namespace App\Model;
 /**
  *
  */
+
 class StoreManager extends AbstractManager
 {
     /**
@@ -29,6 +30,4 @@ class StoreManager extends AbstractManager
 
         return $statement->execute();
     }
-
-
 }
