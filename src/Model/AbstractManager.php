@@ -1,33 +1,33 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: sylvain
- * Date: 07/03/18
- * Time: 20:52
- * PHP version 7
- */
+    /**
+     * Created by PhpStorm.
+     * User: sylvain
+     * Date: 07/03/18
+     * Time: 20:52
+     * PHP version 7
+     */
 
 namespace App\Model;
 
 use App\Model\Connection;
 use PDO;
 
-/**
- * Abstract class handling default manager.
- */
+    /**
+     * Abstract class handling default manager.
+     */
 abstract class AbstractManager
 {
-    protected PDO $pdo; //variable de connexion
+    protected PDO $pdo;//variable de connexion
 
     protected string $table;
 
     protected string $className;
 
     /**
-     * Initializes Manager Abstract class.
-     * @param string $table
-     */
+    * Initializes Manager Abstract class.
+    * @param string $table
+    */
     public function __construct(string $table)
     {
         $this->table = $table;
